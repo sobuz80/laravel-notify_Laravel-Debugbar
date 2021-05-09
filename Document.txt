@@ -1,0 +1,30 @@
+laravel-notify>>>>>>>> 
+https://github.com/mckenziearts/laravel-notify
+
+
+#composer require mckenziearts/laravel-notify
+
+#php artisan vendor:publish --provider="Mckenziearts\Notify\LaravelNotifyServiceProvider"
+#composer dump-autoload
+
+css links Heder
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+   @notifyCss
+
+jslinks Footer
+<script src="{{ asset('js/app.js') }}" defer></script>
+      @notifyJs
+      <x:notify-messages />
+
+
+public function index()
+    {
+        notify()->success('Laravel Notify is awesome!');
+        return view('home');
+    }
+
+
+Laravel Debugbar>>>>>>>> 
+https://github.com/barryvdh/laravel-debugbar
+#composer require barryvdh/laravel-debugbar --dev
+#php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
